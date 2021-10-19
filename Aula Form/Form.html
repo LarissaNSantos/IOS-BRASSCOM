@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+        <title> Formulario HTML </title>
+    </head>
+
+    <body>
+        <header>
+            <h1> Cadastro de Alunas </h1>
+        </header>
+
+        <article>
+
+            <!-- Iniciando Formulario -->
+            
+            <form action="../Aula Estru/index.html">
+                <label for="Bnome"> Nome da Aluna </label>
+                <input type="text" size="30" id="Bnome" required="required"/>
+                <br> <br> 
+                <label for="Bnota">Nota do Aluno: </label>
+                <input type="text" size="30" id="Bnota" required="required"/>
+                <br> <br>
+                <label for="Bano"> Ano Escolar: </label>
+                <input type="text" size="30" id="Bano" required="required"/>
+                 
+                   <br> <br>
+                <input type="submit" value="Enviar"/> 
+
+                <!-- Bloco de seleção radio -->
+
+                <h3> Escolha sua cidade </h3> 
+
+                <input  type="radio" name="tipo" id="cid" value="C">
+                <label for="cid"> São Paulo </label>
+                <br> <br>
+
+                <input  type="radio" name="tipo" id="ma" value="C">
+                <label for="ma"> Mauá </label>
+                <br> <br>
+
+                <input  type="radio" name="tipo" id="san" value="C">
+                <label for="san"> Santo André </label>
+                <br>
+
+                <!-- Bloco de seleção checkbox-->
+                <h3> Musica </h3> 
+
+                <input  type="checkbox" name="tipo" id="bts" value="C">
+                <label for="BTS"> BTS </label>
+                <br> <br>
+
+                <input  type="checkbox" name="tipo" id="Ex" value="C">
+                <label for="Ex"> Exalta Samba </label>
+                <br> <br>
+
+                <input  type="checkbox" name="tipo" id="An" value="C">
+                <label for="An"> Anitta </label>
+
+                <!--Elemento Select-->
+                <h3>Escolha sua comida favorita</h3>
+
+                <select name="comida" id="comida">
+                <option value="feijoada">Feijoada</option>
+                <option value="lasanha">Lasanha</option>
+                <option value="japanose">Japanose</option>
+                <option value="panqueca">Panqueca</option>
+                <option value="churrasco">Churrasco</option>
+                <option value="maionese">Maionese</option>
+                </select>
+
+                    <!--Elemento Datalist-->
+                    <h3>Escolha sua comida favorita</h3>
+
+                    <datalist name="comida" id="comida">
+                    <option value="feijoada">Feijoada</option>
+                    <option value="lasanha">Lasanha</option>
+                    <option value="japanose">Japanose</option>
+                    <option value="panqueca">Panqueca</option>
+                    <option value="churrasco">Churrasco</option>
+                    <option value="maionese">Maionese</option>
+                    </datalist>
+
+            </form>
+        </article>
+
+        <footer>
+            <small>Copyright <sub>&copy;</sub> Todos os direitos reservados </small>
+        </footer>
+
+    </body>
+</html>
