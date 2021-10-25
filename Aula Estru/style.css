@@ -1,24 +1,29 @@
 @charset "UTF-8"
 
 p{
-	color: green;
+	color: white;
 	font-size: 1.2em;
 	font-family: 'Courier New', Courier, monospace;
 }
 h1{
+	color: white;
 	font-family: sans-serif;
 	text-align: center;
 	background-color: #99c2ff;
 }
 h2{ 
 	font-family: arial;
-	color: #FFFFFF;
+	color: white;
 	text-align: center;
 	background-color: #6600cc;
 }
 small{
-	color: blue;
+	color: white;
 	font-size: 0.5em;
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+	background-image: url(fundo.png);
 }
