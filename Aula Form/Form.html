@@ -4,92 +4,184 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
-        <title> Formulario HTML </title>
+        <title> Formulario KPOP</title>
     </head>
 
     <body>
         <header>
-            <h1> Cadastro de Alunas </h1>
+            <h1> Responda as questões </h1>
         </header>
 
         <article>
 
             <!-- Iniciando Formulario -->
+            <p> Cadastra-se para responder o formulário</p>
             
-            <form action="../Aula Estru/index.html">
-                <label for="Bnome"> Nome da Aluna </label>
-                <input type="text" size="30" id="Bnome" required="required"/>
-                <br> <br> 
-                <label for="Bnota">Nota do Aluno: </label>
-                <input type="text" size="30" id="Bnota" required="required"/>
-                <br> <br>
-                <label for="Bano"> Ano Escolar: </label>
-                <input type="text" size="30" id="Bano" required="required"/>
-                 
-                   <br> <br>
-                <input type="submit" value="Enviar"/> 
+            <fieldset>
+                <legend>Identificação</legend>
+                <form action="../Aula Estru/index.html" method="GET">
+                    <label for="Bnome"> Nome e Sobrenome: </label>
+                    <input type="text" size="40" id="Bnome" required="required"/>
+                    <br> <br> 
+                    <label for="Bnota"> Idade: </label>
+                    <input type="text" size="5" id="Bnota" required="required"/>
+                    <br> <br>
+                    <label for="Bano"> Grupo Favorito: </label>
+                    <input type="text" size="20" id="Bano" required="required"/>
+                
+                    <br> <br>
+                    <input type="submit" value="Enviar"/> 
+                    </fieldset>
 
-                <!-- Bloco de seleção radio -->
+                    <!-- Bloco de seleção radio -->
 
-                <h3> Escolha sua cidade </h3> 
+                    <fieldset>
+                        <legend>Seu Estado</legend>
+                        <h3> Escolha seu Estado </h3> 
 
-                <input  type="radio" name="tipo" id="cid" value="C">
-                <label for="cid"> São Paulo </label>
-                <br> <br>
+                        <input  type="radio" name="tipo" id="sao" value="C">
+                        <label for="sao"> São Paulo </label>
+                        <br> <br>
 
-                <input  type="radio" name="tipo" id="ma" value="C">
-                <label for="ma"> Mauá </label>
-                <br> <br>
+                        <input  type="radio" name="tipo" id="ri" value="C">
+                        <label for="ri"> Rio de Janerio </label>
+                        <br> <br>
 
-                <input  type="radio" name="tipo" id="san" value="C">
-                <label for="san"> Santo André </label>
-                <br>
+                        <input  type="radio" name="tipo" id="min" value="C">
+                        <label for="min"> Minas Gerais </label>
+                        <br><br>
 
-                <!-- Bloco de seleção checkbox-->
-                <h3> Musica </h3> 
+                        <select name="estado" id="estado">
+                            <option value="selecione"></option>
+                            <option value="feijoada">Acre</option>
+                            <option value="lasanha">Alagoas</option>
+                            <option value="japanose">Amapá</option>
+                            <option value="panqueca">Amazonas</option>
+                            <option value="churrasco">Bahia</option>
+                            <option value="maionese">Ceará</option>
+                            <option value="maionese">Brasilia</option>
+                            <option value="maionese">Espirito Santos</option>
+                            <option value="maionese">Goias</option>
+                            <option value="maionese">Maranhão</option>
+                            <option value="maionese">Mato Grosso</option>
+                            <option value="maionese">Pará</option>
+                            <option value="maionese">Paraiba</option>
+                            <option value="maionese">Paraná</option>
+                            <option value="maionese">Pernambuco</option>
+                            <option value="maionese">Piaui</option>
+                            <option value="maionese">Rio Grande do Sul</option>
+                            <option value="maionese">Rio Grande do Norte</option>
+                            <option value="maionese">Rondônia</option>
+                            <option value="maionese">Roraima</option>
+                            <option value="maionese">Santa Catarina</option>
+                            <option value="maionese">Sergipe</option>
+                            <option value="maionese">Tocantins</option>
+                        </select>
+                        <br>
 
-                <input  type="checkbox" name="tipo" id="bts" value="C">
-                <label for="BTS"> BTS </label>
-                <br> <br>
+                    </fieldset>     
 
-                <input  type="checkbox" name="tipo" id="Ex" value="C">
-                <label for="Ex"> Exalta Samba </label>
-                <br> <br>
+                    <!-- Bloco de seleção checkbox-->
 
-                <input  type="checkbox" name="tipo" id="An" value="C">
-                <label for="An"> Anitta </label>
+                    <fieldset> 
+                        <legend>Grupo Favorito</legend> 
+                        <h3> Escolha um Grupo Masculino: </h3> 
 
-                <!--Elemento Select-->
-                <h3>Escolha sua comida favorita</h3>
+                        <input  type="checkbox" name="tipo" id="bts" value="C">
+                        <label for="BTS"> BTS </label>
+                        <br> <br>
 
-                <select name="comida" id="comida">
-                <option value="feijoada">Feijoada</option>
-                <option value="lasanha">Lasanha</option>
-                <option value="japanose">Japanose</option>
-                <option value="panqueca">Panqueca</option>
-                <option value="churrasco">Churrasco</option>
-                <option value="maionese">Maionese</option>
-                </select>
+                        <input  type="checkbox" name="tipo" id="Ex" value="C">
+                        <label for="Ex"> Exo </label>
+                        <br> <br>
+
+                        <input  type="checkbox" name="tipo" id="at" value="C">
+                        <label for="at"> Ateez </label>
+                        <br><br>
+
+                        <input  type="checkbox" name="tipo" id="ou" value="C">
+                        <label for="at"> Outros 
+                        <BR>
+
+                        </label> <label for="Bnota"> Qual: </label>
+                        <input type="text" size="10" id="Bnota">
+
+                        <h3> Escolha um Grupo Feminino:</h3>
+
+                        <input  type="checkbox" name="tipo" id="bl" value="C">
+                        <label for="BTS"> BlackPink </label>
+                        <br> <br>
+
+                        <input  type="checkbox" name="tipo" id="tw" value="C">
+                        <label for="Ex"> Twice </label>
+                        <br> <br>
+
+                        <input  type="checkbox" name="tipo" id="red" value="C">
+                        <label for="at"> Red Velvet </label>
+                        <br><br>
+
+                        <input  type="checkbox" name="tipo" id="ou" value="C">
+                        <label for="at"> Outros 
+                        <BR>
+
+                        </label> <label for="Bnota"> Qual: </label>
+                        <input type="text" size="10" id="Bnota">
+
+                    </fieldset>    
+
+                    <!--Elemento Select-->
+
+                    <fieldset>
+                        <legend>Estação</legend>      
+                        <h3>Escolha sua Estação Favorita </h3>
+
+                        <select name="estacao" id="estacao" required="required">
+                            <option value="selecione"></option>
+                            <option value="primavera">Primavera</option>
+                            <option value="outono">Outono</option>
+                            <option value="verao">Verão</option>
+                            <option value="inverno">Inverno</option>
+                        </select>
+                    </fieldset>      
 
                     <!--Elemento Datalist-->
-                    <h3>Escolha sua comida favorita</h3>
 
-                    <input list="browser">
-                        <datalist id="browser">
-                        <option value="feijoada">Feijoada</option>
-                        <option value="lasanha">Lasanha</option>
-                        <option value="japanose">Japanose</option>
-                        <option value="panqueca">Panqueca</option>
-                        <option value="churrasco">Churrasco</option>
-                        <option value="maionese">Maionese</option>
-                    </datalist>
+                    <fieldset>
+                        <legend>Canção</legend>  
+                        <h3>Escolha sua Musica Favorita</h3>
+
+                        <input list="browser">
+                        <datalist id="browser" required="required">
+                            <option value="bts">Fake Love</option>
+                            <option value="blackpink">How You Like That</option>
+                            <option value="ateez">Inception</option>
+                            <option value="twice">The Feels</option>
+                            <option value="exo">Monster</option>
+                            <option value="red velvet">Psycho</option>
+                        </datalist>
+
+                    </fieldset>          
+
+                    <!--Elemento Textarea-->
+
+                    <fieldset>
+                        <legend>Opnião</legend>      
+                        <h3> Deixe seu comentario sobre o formulário:</h3>
+                        <p>Sugestões, elogios e críticas:</p>
+                        <textarea name="message" rows="10" cols="30" placeholder="Deixe aqui a sua mensagem!" required="required"></textarea>
+                        <br/><br/>
+
+                        <input type="submit" value="Enviar" />
+            
+                    </fieldset>  
 
 
-            </form>
-        </article>
+                </form>
+            </article>
 
         <footer>
-            <small>Copyright <sub>&copy;</sub> Todos os direitos reservados </small>
+            <small>Copyright <sub>&copy;</sub> Todos os direitos reservados 
+            </small>
         </footer>
 
     </body>
